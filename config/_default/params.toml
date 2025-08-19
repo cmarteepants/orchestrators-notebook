@@ -1,0 +1,16 @@
+colorScheme = "auto"
+defaultAppearange = "light"
+enableCodeCopy = true
+readingTime = true
+dateFormat = "2006-01-02"
+mainSections = ["posts"]
+
+
+[author]
+name = "Constance Martineau"
+
+[header]
+layout = "basic"
+
+[footer]
+showAppearanceSwitcher = true

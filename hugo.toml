@@ -1,0 +1,14 @@
+baseURL = "https://www.orchestratorsnotebook.com/"
+title = "The Orchestrator's Notebook"
+languageCode = 'en-us'
+enableRobotsTXT = true
+
+[module]
+[[module.imports]]
+path = "github.com/jpanther/congo/v2"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[pagination]
+pagerSize = 10

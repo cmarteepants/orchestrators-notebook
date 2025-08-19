@@ -1,0 +1,26 @@
+# Hugo build output
+/public/
+/resources/
+
+# Hugo build lock (safe to regenerate)
+.hugo_build.lock
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor/project files
+.idea/
+.vscode/
+.zed/
+
+# Node/npm (in case you experiment with frontend extras)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Logs/temp
+*.log
+*.tmp
+*.swp
