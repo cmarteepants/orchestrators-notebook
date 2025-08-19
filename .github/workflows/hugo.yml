@@ -1,26 +1,46 @@
-name: Build and Deploy Hugo (Congo)
+name: Deploy Hugo site to Pages
+
 on:
   push:
-    branches: ["main"]
+    branches: [main]
+  workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Setup Hugo
+      - name: Install Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          hugo-version: "0.128.0"
           extended: true
-      - name: Build
-        run: hugo --minify
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Build site
+        run: hugo --minify --baseURL "https://www.orchestratorsnotebook.com/"
+      - name: Add CNAME and .nojekyll
+        run: |
+          echo "www.orchestratorsnotebook.com" > public/CNAME
+          touch public/.nojekyll
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          cname: www.orchestratorsnotebook.com
+          path: ./public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
