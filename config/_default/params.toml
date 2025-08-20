@@ -1,16 +1,25 @@
-colorScheme = "auto"
-defaultAppearange = "light"
+colorScheme = "slate"
+defaultAppearance = "dark"  # valid options: light or dark
+autoSwitchAppearance = true
+
+# defaultThemeColor = "#FFFFFF"
+
+# enableSearch = true
 enableCodeCopy = true
-readingTime = true
-dateFormat = "2006-01-02"
-mainSections = ["posts"]
 
-
-[author]
-name = "Constance Martineau"
+# robots = ""
+fingerprintAlgorithm = "sha256"
 
 [header]
 layout = "basic"
 
 [footer]
+showCopyright = true
+showThemeAttribution = false
 showAppearanceSwitcher = true
+showScrollToTop = true
+
+[homepage]
+layout = "profile"
+showRecent = true
+recentLimit = 6
