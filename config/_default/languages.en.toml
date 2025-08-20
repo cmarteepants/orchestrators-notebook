@@ -1,0 +1,21 @@
+languageCode = "en"
+languageName = "English"
+languageDirection = "ltr"
+weight = 1
+
+title = "The Orchestrator's Notebook"
+
+[params]
+mainSections = ["posts"]
+dateFormat = "2006-01-02"
+description = "Notes on building and orchestrating the backbone of intelligent systems."
+
+[params.author]
+name = "Constance Martineau"
+image = "img/author.jpeg"
+headline = "Staff Product Manager at Astronomer"
+bio = "Building the backbone of intelligent systems"
+links = [
+    { github = "https://github.com/cmarteepants" },
+    { linkedin = "https://linkedin.com/in/constance-martineau" },
+]
