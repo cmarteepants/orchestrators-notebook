@@ -4,6 +4,6 @@ title: "The Orchestrator's Notebook"
 
 **Welcome to The Orchestrator's Notebook 🔧**
 
-Here I document insights from building data infrastructure at scale, plus my explorations into where orchestration thinking could shape the future of intelligent systems. You'll find practical insights from the trenches—everything from turning architectural bets into shipped products to navigating the messy intersection of open source innovation and enterprise adoption.
+This is where I document insights from building data infrastructure at scale, plus my explorations into how orchestration principles can shape the future of AI/ML platforms. You'll find practical lessons from the trenches—from turning architectural bets into shipped adoption to navigating the intersection of open source innovation and enterprise needs.
 
-Think of this as my learning lab, where I document what works (and what doesn't) when building AI/ML systems and data infrastructure that scales with intelligence.
+Think of this as my learning lab, where I explore what works (and what doesn't) when building systems that scale with intelligence, particularly at the intersection of runtime, UX, and scale—where technical architecture meets user experience.
