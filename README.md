@@ -38,7 +38,7 @@ The site will be available at `http://localhost:1313`
 
 Automatically deployed to GitHub Pages via GitHub Actions on push to `main` branch.
 
-The site is available at: [orchesrators-notebook.com](https://www.orchestratorsnotebook.com)
+The site is available at: [orchestrators-notebook.com](https://www.orchestratorsnotebook.com)
 
 ## License
 
