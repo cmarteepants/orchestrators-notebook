@@ -1,7 +1,7 @@
 ---
 title: "Why AI Infrastructure Will Repeat Data Infrastructure's Growing Pains (And What We Can Do About It)"
 date: 2025-08-24
-draft: true
+draft: false
 description: "Drawing parallels between data infrastructure's evolution and today's AI infrastructure challenges, exploring why features are easy but trust is hard, and what we can learn from Apache Airflow's journey to guide AI infrastructure maturation."
 tags: ["ai-infrastructure", "data-infrastructure", "apache-airflow", "product-strategy", "open-source", "enterprise-adoption"]
 categories: ["ai-infrastructure", "thought-leadership"]
