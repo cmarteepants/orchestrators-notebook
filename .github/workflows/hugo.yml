@@ -3,6 +3,9 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # Daily at 11:00 UTC (7am EDT / 6am EST for America/Toronto)
+    - cron: "0 11 * * *"
   workflow_dispatch:
 
 permissions:
@@ -26,17 +29,26 @@ jobs:
           hugo-version: "latest"
           extended: true
 
-      - name: Get Hugo modules
-        run: |
-          hugo mod get -u ./...
-          hugo mod tidy
-          hugo mod vendor
+      # Cache Hugo & Go module artifacts
+      - name: Cache Hugo/Go modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/hugo
+            ~/.cache/go-build
+            ~/go/pkg/mod
+            ./resources
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.mod', '**/go.sum', 'hugo.toml', 'hugo.yaml', 'hugo.json') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
+            ${{ runner.os }}-
+          
       - name: Build site
+        env:
+          HUGO_ENV: production
+          HUGO_ENVIRONMENT: production
         run: hugo --minify --baseURL "https://www.orchestratorsnotebook.com/"
-      - name: Add CNAME and .nojekyll
-        run: |
-          echo "www.orchestratorsnotebook.com" > public/CNAME
-          touch public/.nojekyll
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
