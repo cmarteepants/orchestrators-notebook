@@ -18,13 +18,13 @@ In 2018, every data team was building their own orchestration layer. Airflow was
 
 ![Diagram showing parallel evolution timelines of Data Infrastructure (2018-2022) and AI Infrastructure (2024-2028). Data infrastructure progressed through Fragmentation, Tool Proliferation, Consolidation, Governance, and Maturity stages. AI infrastructure shows similar pattern: Vector DB Explosion, LLMOps Proliferation, Integration Challenge, Governance Gap, and Decision Point. Warning indicators highlight current AI infrastructure risks at Integration Challenge and Governance Gap stages, while a success indicator marks Data Infrastructure's completed maturity. Connecting lines show parallel evolution patterns between the two timelines.](parallel-development-cycles.png "Infrastructure evolution follows predictable patterns. Data infrastructure's 2018-2022 journey from fragmentation to maturity mirrors AI infrastructure's current trajectory. We're approaching the critical governance gap phase—the same inflection point where data infrastructure teams faced their biggest challenges.")
 
-Fast-forward to today's AI infrastructure landscape, and the parallels are striking. Vector databases have become the new data lakes—essential but overwhelming in their variety. AI platforms are proliferating like orchestrators did in 2019. Every team is building their own RAG implementation, their own model serving layer, their own AI observability stack.
+Fast-forward to today's AI infrastructure landscape, and the parallels are striking. Vector databases have become the new data lakes — essential but overwhelming in their variety. AI platforms are proliferating like orchestrators did in 2019. Every team is building their own RAG implementation, their own model serving layer, their own AI observability stack.
 
 The fundamental dynamic is identical: powerful new capabilities are emerging faster than the standards and governance needed to use them responsibly at scale.
 
 ## Features Are Easy, Trust Is Hard
 
-Here's the lesson that took me years to fully internalize through my work at Astronomer (a managed service for Apache Airflow)—from onboarding enterprise customers as a solutions architect to shaping Airflow 3 strategy as a product manager: building features is the easy part. Building trust is what separates toys from production-grade infrastructure, and is so much harder.
+Here's the lesson that took me years to fully internalize through my work at Astronomer (a managed service for Apache Airflow) — from onboarding enterprise customers as a solutions architect to shaping Airflow 3 strategy as a product manager: building features is the easy part. Building trust is what separates toys from production-grade infrastructure, and is so much harder.
 
 You can spin up a vector database over a weekend. You can build a decent RAG pipeline in a few days. But getting an enterprise to bet their customer-facing AI applications on your infrastructure? That requires proven reliability, robust governance, and seamless integration with existing systems.
 
@@ -34,7 +34,7 @@ This connects directly to the governance gaps I see across the AI infrastructure
 
 ## The Interoperability Imperative
 
-The winners in data infrastructure weren't necessarily the most feature-rich tools—they were the ones that played well with others. Airflow succeeded because it integrated with everything: your existing databases, your cloud providers, your monitoring tools, your security systems. dbt won because it fit seamlessly into existing data team workflows rather than requiring a complete rebuild.
+The winners in data infrastructure weren't necessarily the most feature-rich tools — they were the ones that played well with others. Airflow succeeded because it integrated with everything: your existing databases, your cloud providers, your monitoring tools, your security systems. dbt won because it fit seamlessly into existing data team workflows rather than requiring a complete rebuild.
 
 The same principle applies to AI infrastructure, but the blast radius is bigger. Data pipeline failures delay dashboards and reports. AI system failures make wrong decisions at scale, potentially affecting real users in real time.
 
