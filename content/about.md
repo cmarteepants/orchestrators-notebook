@@ -1,6 +1,6 @@
 ---
 title: "About"
-subtitle: "Building in public, thinking out loud"
+subtitle: "Practitioner notes on orchestration, AI, and the abstractions under pressure."
 showDate: false
 showReadingTime: false
 ---
