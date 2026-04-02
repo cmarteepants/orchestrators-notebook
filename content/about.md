@@ -1,20 +1,16 @@
 ---
 title: "About"
-subtitle: "Exploring how orchestration shapes the future of data and AI systems."
+subtitle: "Building in public, thinking out loud"
 showDate: false
 showReadingTime: false
 ---
 
-## Exploring how orchestration shapes the future of data and AI systems
+Hi 👋, I'm Constance!
 
-Hi 👋, I'm Constance! I'm a Staff Product Manager at Astronomer, where I help drive strategy for Apache Airflow and the broader data orchestration ecosystem.
+I'm a Staff PM at Astronomer, where I work on Apache Airflow across the OSS roadmap and the enterprise product built on top of it. Airflow is one of those projects where the open source and commercial sides are genuinely entangled, and that intersection is where most of the interesting problems live. I've been here long enough to have shaped a few of those problems, and to have formal contributor credit on the project itself.
 
-**What I do best:** Turning architectural bets into shipped adoption and building cross-functional alignment across complex stakeholder groups. I excel at providing clarity and strategic guidance that enables teams to execute effectively, even in ambiguous or rapidly changing environments.
+My background is technical, and it shapes how I approach product. I tend to think in systems: not just what a feature should do, but where a property actually belongs in the model and what gets harder to fix if you draw the boundary in the wrong place. That instinct shows up in Airflow architecture decisions, but also in the bigger questions I find myself paying attention to: what AI is actually changing about how pipelines are built and operated, how orchestration primitives need to evolve as the inputs get less deterministic, whether the abstractions we have today will hold.
 
-I've spent the past few years leading product efforts across open source and enterprise platforms, often stepping into teams and projects that needed strategic direction and structured execution—most recently driving strategy and leading key efforts for Airflow 3.
+This is where the thinking that doesn't fit a slide deck or a proposal goes when it crystallizes into something worth keeping. I'm based in Montreal, I speak at conferences, and I have strong opinions about workflow orchestration that I try to earn rather than just assert.
 
-**What I'm exploring:** How orchestration principles from the data world apply to AI/ML platforms, and what it takes to build infrastructure that scales with intelligence. I'm particularly interested in the intersection of runtime, UX, and scale—where technical architecture meets user experience.
-
-My work focuses on bridging the gap between open source innovation and enterprise adoption. I regularly speak at conferences and engage with enterprise customers, helping translate cutting-edge concepts into production-ready solutions.
-
-**Connect with me:** [LinkedIn](https://linkedin.com/in/constance-martineau) | [GitHub](https://github.com/your-username)
+**Connect with me:** [LinkedIn](https://linkedin.com/in/constance-martineau) | [GitHub](https://github.com/cmarteepants)
